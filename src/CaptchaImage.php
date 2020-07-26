@@ -3,6 +3,15 @@ namespace codeconjuring\captcha;
 
 class CaptchaImage
 {
+	public static function load()
+	{
+		$view = view('captcha::image');
+
+		$rendered_view = $view->render();
+
+		return $rendered_view;
+	}
+
 	public static function captcha()
 	{
 

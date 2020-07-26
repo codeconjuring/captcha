@@ -6,3 +6,6 @@ Route::get('captcha',function(){
 Route::get('image',function(){
 	return view('captcha::image');
 });
+Route::get('load_image',function(){
+	return codeconjuring\captcha\CaptchaImage::load();
+});
