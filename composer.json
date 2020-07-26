@@ -1,0 +1,26 @@
+{
+    "name": "codeconjuring/captcha",
+    "description": "It creates image captchas to make form submissions more secure.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "codeconjuring",
+            "email": "codeconjuring@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "codeconjuring\\captcha\\": "src/"
+        }
+    },
+    "extra": {
+    "laravel": {
+        "providers": [
+            "codeconjuring\\captcha\\CaptchaServiceProvider"
+        ]
+      }
+    },
+}
