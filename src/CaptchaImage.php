@@ -56,6 +56,6 @@ class CaptchaImage
 
 	public static function match($input_string)
 	{
-		return (session()->get('conjurecaptcha299300') == $input_string) ? '1' : '0';
+		return (session()->get('conjurecaptcha299300') == $input_string) ? true : false;
 	}
 }
